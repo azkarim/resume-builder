@@ -1,12 +1,15 @@
-# React + Vite
+# Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I wanted to have a nice resume in pdf format. Current document editor (Google Docs, Pages, MS Word) fail to produce a layout that I wanted. Often editor specific margins/spacing get in the way and some layout just outright impossible without unwanted negative space leaking in.
 
-Currently, two official plugins are available:
+So I resorted to creating layout in React and export to pdf with [react-pdf](https://react-pdf.org). Output pdf is only 8-10 kb, which is surprising. Pdf is also vectorised so zoomng in will not result in any loss in quality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Following is the one and only design at the moment.
 
-## Expanding the ESLint configuration
+![Screenshot of resume](./resume.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# How to customise with your own data
+
+1. Edit json file in `data.js`
+2. `npm run dev` (make sure to run `npm install` first)
+3. Visit localhost and download the pdf
