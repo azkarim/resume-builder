@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   datePeriod: {
-    fontSize: style.bodyFontSize,
+    fontSize: style.bodyFontSizeSm,
   },
   institutionContainer: {
     flexDirection: "row",
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     color: style.colors.secondary,
   },
   institutionLocation: {
-    fontSize: style.bodyFontSize,
+    fontSize: style.bodyFontSizeSm,
   },
 });
 

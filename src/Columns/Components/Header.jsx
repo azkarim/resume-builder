@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
   designation: {
     fontSize: style.h2,
     color: style.colors.secondary,
-    padding: "2px 0 2px 0",
+    padding: "4px 0 4px 0",
   },
 });
 

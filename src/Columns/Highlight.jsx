@@ -11,7 +11,7 @@ const Highlight = () => {
         width: "40%",
         height: "100%",
         backgroundColor: style.colors.primary,
-        padding: "120px 40px 40px 20px",
+        padding: "108px 40px 40px 20px",
       }}
     >
       <Section

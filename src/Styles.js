@@ -7,6 +7,7 @@ export const style = {
   h1: "16px",
   h2: "10px",
   bodyFontSize: "8px",
+  bodyFontSizeSm: "7px",
   bodyFontColor: "#3E3E3E",
   colors: {
     primary: "#006666",

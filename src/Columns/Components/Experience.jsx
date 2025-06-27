@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   datePeriod: {
-    fontSize: style.bodyFontSize,
+    fontSize: style.bodyFontSizeSm,
   },
   companyContainer: {
     flexDirection: "row",
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     paddingTop: "2px",
   },
   companyLocation: {
-    fontSize: style.bodyFontSize,
+    fontSize: style.bodyFontSizeSm,
     paddingTop: "2px",
   },
   achievementContainer: {
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
     fontSize: style.bodyFontSize,
   },
   bulletText: {
-    fontSize: style.bodyFontSize,
     flex: 1,
     lineHeight: "12px",
+    fontSize: style.bodyFontSizeSm,
   },
 });
 
