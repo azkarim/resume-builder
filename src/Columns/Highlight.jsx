@@ -2,7 +2,7 @@ import { Text, View } from "@react-pdf/renderer";
 import { style } from "../Styles";
 import { Section } from "./Components/Section";
 import { Achievement } from "./Components/Achievement";
-import data from "../data";
+import data from "../data_personal";
 
 const Highlight = () => {
   return (

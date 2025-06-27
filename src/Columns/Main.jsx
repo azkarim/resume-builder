@@ -11,7 +11,7 @@ import {
   Achievement,
 } from "./Components/Experience";
 import { Education, Certification, Institution } from "./Components/Education";
-import data from "../data";
+import data from "../data_personal";
 
 const Main = () => {
   return (
