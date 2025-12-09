@@ -28,54 +28,65 @@ const Main = () => {
           <Designation value={data.personal.designation} />
         </Header>
 
-        <Contacts>
-          {data.personal.contacts.map((contact, index) => (
-            <Contact
-              key={index}
-              type={contact.type}
-              label={contact.label}
-              urlPrefix={contact.urlPrefix}
-            />
-          ))}
-        </Contacts>
-
-        <Section header="Summary" style={{ marginTop: "28px" }}>
-          <Text style={{ paddingTop: "2px", lineHeight: "12px" }}>
-            {data.summary}
-          </Text>
-        </Section>
-
-        <Section header="Professional Experience" style={{ marginTop: "12px" }}>
-          {data.experience.map((exp, index) => (
-            <Experience key={index}>
-              <Role
-                role={exp.role}
-                type={exp.type}
-                from={exp.from}
-                till={exp.till}
+        {data.personal.contacts && (
+          <Contacts>
+            {data.personal.contacts.map((contact, index) => (
+              <Contact
+                key={index}
+                type={contact.type}
+                label={contact.label}
+                urlPrefix={contact.urlPrefix}
               />
-              <Company name={exp.company} location={exp.location} />
-              <Achievement>
-                {exp.achievements.map((achievement, i) => (
-                  <BulletItem key={i}>{achievement}</BulletItem>
-                ))}
-              </Achievement>
-            </Experience>
-          ))}
-        </Section>
+            ))}
+          </Contacts>
+        )}
 
-        <Section header="Education" style={{ marginTop: "6px" }}>
-          {data.education.map((edu, index) => (
-            <Education key={index}>
-              <Certification
-                name={edu.certification}
-                from={edu.from}
-                till={edu.till}
-              />
-              <Institution name={edu.institution} location={edu.location} />
-            </Education>
-          ))}
-        </Section>
+        {data.summary && (
+          <Section header="Summary" style={{ marginTop: "28px" }}>
+            <Text style={{ paddingTop: "2px", lineHeight: "12px" }}>
+              {data.summary}
+            </Text>
+          </Section>
+        )}
+
+        {data.experience && (
+          <Section
+            header="Professional Experience"
+            style={{ marginTop: "12px" }}
+          >
+            {data.experience.map((exp, index) => (
+              <Experience key={index}>
+                <Role
+                  role={exp.role}
+                  type={exp.type}
+                  from={exp.from}
+                  till={exp.till}
+                />
+                <Company name={exp.company} location={exp.location} />
+                <Achievement>
+                  {exp.achievements.map((achievement, i) => (
+                    <BulletItem key={i}>{achievement}</BulletItem>
+                  ))}
+                </Achievement>
+              </Experience>
+            ))}
+          </Section>
+        )}
+
+        {data.education && (
+          <Section header="Education" style={{ marginTop: "6px" }}>
+            {data.education.map((edu, index) => (
+              <Education key={index}>
+                <Certification
+                  name={edu.certification}
+                  from={edu.from}
+                  till={edu.till}
+                />
+                <Institution name={edu.institution} location={edu.location} />
+              </Education>
+            ))}
+          </Section>
+        )}
       </View>
     </>
   );
