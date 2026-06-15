@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
   },
   bulletContainer: {
     flexDirection: "row",
+    paddingBottom: "2px",
   },
   bullet: {
     width: "10px",
@@ -45,7 +46,7 @@ const styles = StyleSheet.create({
   },
   bulletText: {
     flex: 1,
-    lineHeight: "12px",
+    lineHeight: "1.3",
     fontSize: style.bodyFontSizeSm,
   },
 });
